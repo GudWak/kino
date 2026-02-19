@@ -38,7 +38,7 @@ namespace Cinema
 
             Description = description;
 
-            // Проверка корректности базовой цены
+          // Проверка корректности базовой цены
             if (price < 0) price = 100;
             BasePrice = price;
 
