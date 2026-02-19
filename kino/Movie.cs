@@ -48,7 +48,7 @@ namespace Cinema
 
         public override string ToString()
         {
-            return $"{Title} ({Genre}, {AgeRating}, {Year}) - Длительность: {Duration} мин.";
+           return $"{Title} ({Genre}, {AgeRating}, {Year}) - Длительность: {Duration} мин.";
         }
 
         // Рассчитать цену с учетом формата сеанса
