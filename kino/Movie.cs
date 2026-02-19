@@ -15,7 +15,7 @@ namespace Cinema
         public string Description { get; set; }        // Описание
         public decimal BasePrice { get; set; }         // Базовая цена билета
 
-        // Жанр (боевик, комедия, драма, фантастика, ужасы и т.д.)
+        // Жанр (боевик, комедия, драма, фантастика, ужасы и т.д.) 
         public string Genre { get; set; }
 
         // Возрастной рейтинг (0+, 6+, 12+, 16+, 18+)
