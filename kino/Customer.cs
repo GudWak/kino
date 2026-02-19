@@ -51,7 +51,6 @@ namespace Cinema
                 return null;
             }
 
-            // Покупаем билет (резервируем место)
             Ticket ticket = session.SellTicket(row, seat, this);
             if (ticket == null)
             {
