@@ -27,13 +27,11 @@ namespace Cinema
             Id = id;
             Title = title;
             Director = director;
-
             // Проверка корректности года выпуска
             int currentYear = System.DateTime.Now.Year;
             if (year < 1888) year = 1888;
             if (year > currentYear) year = currentYear;
             Year = year;
-
             // Проверка корректности длительности
             if (duration < 1) duration = 60;
             Duration = duration;
