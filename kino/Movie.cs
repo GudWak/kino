@@ -32,7 +32,7 @@ namespace Cinema
             if (year < 1888) year = 1888;
             if (year > currentYear) year = currentYear;
             Year = year;
-            // Проверка корректности длительности
+          // Проверка корректности длительности
             if (duration < 1) duration = 60;
             Duration = duration;
 
