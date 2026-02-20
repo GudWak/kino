@@ -74,9 +74,8 @@ namespace Cinema
 
             bonusPoints += Math.Round(ticket.Price * 0.05m, 0);
 
-            // Запомним жанр как предпочтение
-            AddPreferredGenre(session.Movie.Genre);
 
+            AddPreferredGenre(session.Movie.Genre);
             return ticket;
         }
 
