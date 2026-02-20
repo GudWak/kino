@@ -93,7 +93,7 @@ namespace Cinema
             purchasedTickets.RemoveAt(idx);
 
 
-            // Списать часть бонусов (условно: начисленные за этот билет 5%)
+            
             decimal earned = Math.Round(ticket.Price * 0.05m, 0);
             bonusPoints = Math.Max(0, bonusPoints - earned);
 
