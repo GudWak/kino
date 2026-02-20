@@ -156,6 +156,7 @@ namespace Cinema
         {
             List<Movie> recommendations = new List<Movie>();
 
+
             if (allMovies == null || allMovies.Count == 0) return recommendations;
 
             HashSet<int> watchedMovieIds = new HashSet<int>();
