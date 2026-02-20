@@ -133,9 +133,8 @@ namespace Cinema
         // TODO 3: Использовать бонусные баллы
         public decimal UseBonusPoints(decimal ticketPrice)
         {
-            // Максимум 50% стоимости билета можно оплатить баллами
-            // 1 балл = 1 рубль
-            // Вернуть сумму, которую можно списать баллами
+            
+            
             decimal maxBonus = ticketPrice * 0.5m;
             decimal usedBonus = Math.Min(bonusPoints, maxBonus);
             bonusPoints -= usedBonus;
