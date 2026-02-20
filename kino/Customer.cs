@@ -123,7 +123,7 @@ namespace Cinema
             }
 
 
-            // Накопительная скидка: после 10 покупок +5% (но не более 35%)
+
             if (purchasedTickets.Count >= 10)
                 discount = Math.Min(0.35m, discount + 0.05m);
 
