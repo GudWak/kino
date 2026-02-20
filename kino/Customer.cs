@@ -88,10 +88,10 @@ namespace Cinema
             int idx = purchasedTickets.FindIndex(t => t.Id == ticket.Id);
             if (idx < 0) return false;
 
-            // Освобождаем место
             ticket.Session?.FreeSeat(ticket.Row, ticket.Seat);
 
             purchasedTickets.RemoveAt(idx);
+
 
             // Списать часть бонусов (условно: начисленные за этот билет 5%)
             decimal earned = Math.Round(ticket.Price * 0.05m, 0);
