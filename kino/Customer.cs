@@ -58,7 +58,7 @@ namespace Cinema
                 return null;
             }
 
-            // Применяем скидку
+
             decimal discount = CalculateDiscount();
             decimal priceAfterDiscount = ticket.Price * (1 - discount);
 
