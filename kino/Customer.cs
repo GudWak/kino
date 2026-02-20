@@ -71,7 +71,7 @@ namespace Cinema
 
             purchasedTickets.Add(ticket);
 
-            // Начислить бонусные баллы (5% от оплаченной суммы)
+
             bonusPoints += Math.Round(ticket.Price * 0.05m, 0);
 
             // Запомним жанр как предпочтение
