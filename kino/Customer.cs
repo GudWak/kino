@@ -62,7 +62,7 @@ namespace Cinema
             decimal discount = CalculateDiscount();
             decimal priceAfterDiscount = ticket.Price * (1 - discount);
 
-            // Применяем бонусы (до 50%)
+           
             decimal usedBonus = UseBonusPoints(priceAfterDiscount);
             decimal finalPrice = priceAfterDiscount - usedBonus;
             if (finalPrice < 0) finalPrice = 0;
