@@ -144,6 +144,7 @@ namespace Cinema
         // TODO 1: Добавить предпочитаемый жанр
         public void AddPreferredGenre(string genre)
         {
+
             if (string.IsNullOrWhiteSpace(genre)) return;
             genre = genre.Trim().ToLowerInvariant();
             if (!preferredGenres.Contains(genre))
