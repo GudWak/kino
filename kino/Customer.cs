@@ -82,6 +82,7 @@ namespace Cinema
         // TODO 2: Вернуть билет
         public bool ReturnTicket(Ticket ticket)
         {
+
             if (ticket == null) return false;
 
             int idx = purchasedTickets.FindIndex(t => t.Id == ticket.Id);
