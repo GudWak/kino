@@ -104,7 +104,6 @@ namespace Cinema
         public decimal CalculateDiscount()
         {
             decimal discount = 0;
-
             string type = (CustomerType ?? "обычный").Trim().ToLowerInvariant();
             switch (type)
             {
@@ -122,6 +121,7 @@ namespace Cinema
                     discount = 0m;
                     break;
             }
+
 
             // Накопительная скидка: после 10 покупок +5% (но не более 35%)
             if (purchasedTickets.Count >= 10)
